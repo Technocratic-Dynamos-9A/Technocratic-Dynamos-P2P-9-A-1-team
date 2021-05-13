@@ -65,7 +65,16 @@
                     background-color: orange;
                     color: white;
                 }
+
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
     </style>
+    <header style="background-color: rgba(214, 157, 0, 0.863);">
+        <img src="favicon.PNG" height="50" width="50">
+    </header>
     <div class="topnav">
         <a class="active" href="#home">Home</a>
         <a href="#product">Products</a>
@@ -105,7 +114,7 @@
             width: auto;
             padding: 16px;
             margin-top: -22px;
-            color: white;
+            color: rgb(126, 3, 3);
             font-weight: bold;
             font-size: 18px;
             transition: 0.6s ease;
@@ -121,12 +130,12 @@
 
             /* On hover, add a black background color with a little bit see-through */
             .prev:hover, .next:hover {
-                background-color: rgba(0,0,0,0.8);
+                background-color: rgba(0, 0, 0, 0.8);
             }
 
         /* Caption text */
         .text {
-            color: #f2f2f2;
+            color: #000000;
             font-size: 15px;
             padding: 8px 12px;
             position: absolute;
@@ -137,7 +146,7 @@
 
         /* Number text (1/3 etc) */
         .numbertext {
-            color: #f2f2f2;
+            color: #000000;
             font-size: 12px;
             padding: 8px 12px;
             position: absolute;
@@ -195,7 +204,22 @@
             }
         }
     </style>
-
+    <style>
+        .footer {
+            position: static;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(153, 153, 153);
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .context1 {
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+    </style>
 
         <div class="slideshow-container">
 
@@ -257,13 +281,21 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
         </script>
+<section>
+<h1 style="text-align: center;"> What is peer to peer learning </h1>
 
+<div class="context1">
+    <p>In school settings, peer-to-peer learning is all about students teaching other students. <br>
+    Peer-to-peer learning in the workplace is similar—instead of students, though, it’s employees teaching one another.</p>
+</div>
+</section>
 
+    <div class="footer">
         <h1>Powered by Technocratic Dynamos</h1>
-        <p>Prsented by class 9-A of 2021. click <a href="Table1.html" target="_blank">here</a> to view members list.</p>
-        <footer style="text-align:left;">
+        <p>Presented by class 9-A of 2021. click <a href="Table1.html" target="_blank">here</a> to view members list.</p>
             <p>&copy;Magnificent Works - 2021,&reg; The Technocratic Dynamos</p>
-        </footer>
+    </div>
 
     </body>
 </html>
+
