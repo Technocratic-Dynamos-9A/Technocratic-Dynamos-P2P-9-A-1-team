@@ -1,170 +1,257 @@
 <HTML>
 <HEAD>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=windows-1252">
-<link rel="icon" href="favicon.PNG" type="image/PNG" sizes="16x16">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<TITLE>Table1</TITLE>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8">
+    <TITLE>Table1</TITLE>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .topnav a {
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: black;
+                    color: white;
+                }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+    </style>
+    <header style="background-color: rgba(214, 157, 0, 0.863);">
+        <img src="favicon.PNG" height="50" width="50">
+    </header>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="#product">Products</a>
+        <a href="#contact">Contact us</a>
+        <a href="#about">About us</a>
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <style type="text/css" class="init">
+        td:hover {
+            background-color: orange;
+        }
+    </style>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" class="init">
+        $(document).ready(function () {
+            $('#tableid').DataTable();
+        });
+
+
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .footer {
+            position: static;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(153, 153, 153);
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+    </style>
 </HEAD>
+
 <BODY>
-<TABLE BORDER=1 BGCOLOR=#ffffff CELLSPACING=0><FONT FACE="Calibri" COLOR=#000000><CAPTION><B>Table1</B></CAPTION></FONT>
+    <article style="font-size: 15px;width:100%">
+        <table id="tableid" class="display">
+            <THEAD>
+                <TR>
+                    <TH style="width:135px">Roll Number</TH>
+                    <TH>Name</TH>
+                    <TH>Role</TH>
 
-<THEAD>
-<TR>
-<TH BGCOLOR=#c0c0c0 BORDERCOLOR=#000000 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Roll number</FONT></TH>
-<TH BGCOLOR=#c0c0c0 BORDERCOLOR=#000000 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Name</FONT></TH>
-<TH BGCOLOR=#c0c0c0 BORDERCOLOR=#000000 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Role</FONT></TH>
+                </TR>
+            </THEAD>
+            <TBODY>
+                <TR>
+                    <TD>1</TD>
+                    <TD>Aadi Singh</TD>
+                    <TD>Graphic Designer</TD>
 
-</TR>
-</THEAD>
-<TBODY>
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>1</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>AADI SINGH</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Graphics designer</FONT></TD>
 
-</TR>
+                </TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>2</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>AADI SOLANKI</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Code developer</FONT></TD>
+                <TR>
+                    <TD>2</TD>
+                    <TD>Aadi Solanki</TD>
+                    <TD>Code Developer</TD>
 
-</TR>
+                </TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>3</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>AARUSHI BAJPAI</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Ranging researcher</FONT></TD>
+                <TR>
+                    <TD>3</TD>
+                    <TD>Aarushi Bajpai</TD>
+                    <TD>Ranging Researcher</TD>
 
-</TR>
+                </TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>4</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>ABHINAV BHARDWAJ</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Testing crew</FONT></TD>
+                <TR>
+                    <TD>4</TD>
+                    <TD>Adhinav Bhardwaj</TD>
+                    <TD>Testing Crew</TD>
 
-</TR>
+                </TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>5</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>ADEEB ALI ISLAM</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Leader</FONT></TD>
+                <TR>
+                    <TD>5</TD>
+                    <TD>Adeeb Ali Islam</TD>
+                    <TD>Leader</TD>
 
-</TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>6</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>AGRIMA GARG</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Ranging researcher</FONT></TD>
+                </TR>
 
-</TR>
+                <TR>
+                    <TD>6</TD>
+                    <TD>Agrima Garg</TD>
+                    <TD>Ranging Researcher</TD>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>7</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>AMARTYA MISHRA</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Code developer</FONT></TD>
 
-</TR>
+                </TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>8</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>ANANYA SHARMA</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Testing crew</FONT></TD>
+                <TR>
+                    <TD>7</TD>
+                    <TD>Amartya Mishra</TD>
+                    <TD>Code Developer</TD>
 
-</TR>
+                </TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>9</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>ANISH SAXENA</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Testing crew</FONT></TD>
+                <TR>
+                    <TD>8</TD>
+                    <TD>Ananya Sharma</TD>
+                    <TD>Testing Crew</TD>
 
-</TR>
+                </TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>10</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>ANUSHREE DUBEY</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Graphics designer</FONT></TD>
+                <TR>
+                    <TD>9</TD>
+                    <TD>Anish Saxena </TD>
+                    <TD>Testing Crew</TD>
 
-</TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>11</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>ARNAV CHAUHAN</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Testing crew</FONT></TD>
+                </TR>
 
-</TR>
+                <TR>
+                    <TD>10</TD>
+                    <TD>Anushree Dubey</TD>
+                    <TD>Graphic Designer</TD>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>12</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>ARNAV GOEL</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000><BR></FONT></TD>
+                </TR>
 
-</TR>
+                <TR>
+                    <TD>11</TD>
+                    <TD>Arnav Chauhan</TD>
+                    <TD>Testing Crew</TD>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>13</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>ARYAN KUMAR</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Code developer</FONT></TD>
 
-</TR>
+                </TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>14</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>AYUSH KAUSHIK</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Graphics designer</FONT></TD>
+                <TR>
+                    <TD>12</TD>
+                    <TD>Arnav Goel</TD>
+                    <TD> </TD>
 
-</TR>
+                </TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>15</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>BHUMIKA ANAND<BR>SAXENA</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Ranging researcher</FONT></TD>
+                <TR>
+                    <TD>13</TD>
+                    <TD>Aryan Kumar</TD>
+                    <TD>Code Developer</TD>
 
-</TR>
+                </TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>16</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>CHINMAY PANDEY</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000><BR></FONT></TD>
+                <TR>
+                    <TD>14</TD>
+                    <TD>Ayush Kaushik</TD>
+                    <TD>Graphics Designer</TD>
 
-</TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>17</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>DAKSHATA</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Ranging researcher</FONT></TD>
+                </TR>
 
-</TR>
+                <TR>
+                    <TD>15</TD>
+                    <TD>Bhumika Anand Saxena</TD>
+                    <TD>Ranging Researcher</TD>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>18</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>DARSH PRAKASH</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>graphics designer</FONT></TD>
+                </TR>
 
-</TR>
+                <TR>
+                    <TD>16</TD>
+                    <TD>Chinmay Pandey</TD>
+                    <TD> </TD>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>19</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>DHRUV GOYAL</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Ranging researcher</FONT></TD>
 
-</TR>
+                </TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>20</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>DIVYANSHU PANDEY</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Code developer</FONT></TD>
+                <TR>
+                    <TD>17</TD>
+                    <TD>Dakshata Vats</TD>
+                    <TD>Ranging Researcher</TD>
 
-</TR>
 
-<TR VALIGN=TOP>
-<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>21</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>IDHANT PANWAR</FONT></TD>
-<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#000000>Code developer</FONT></TD>
+                </TR>
 
-</TR>
-</TBODY>
-<TFOOT></TFOOT>
-</TABLE>
+                <TR>
+                    <TD>18</TD>
+                    <TD>Darsh Prakash</TD>
+                    <TD>Graphic Designer</TD>
+
+
+                </TR>
+
+                <TR>
+                    <TD>19</TD>
+                    <TD>Dhruv Goyal</TD>
+                    <TD>Ranging Researcher</TD>
+                </TR>
+
+                <TR>
+                    <TD>20</TD>
+                    <TD>Divyanshu Pandey</TD>
+                    <TD>Code Developer</TD>
+                </TR>
+
+                <TR>
+                    <TD>21</TD>
+                    <TD>Idhant Panwar</TD>
+                    <TD>Sharma</TD>
+
+                </TR>
+                </table>
+
+
+                <div class="footer">
+                    <h1>Powered by Technocratic Dynamos</h1>
+                    <p>Presented by class 9-A of 2021. click <a href="Table1.html" target="_blank">here</a> to view members list.</p>
+                    <p>&copy;Magnificent Works - 2021,&reg; The Technocratic Dynamos</p>
+                </div>
 </BODY>
 </HTML>
